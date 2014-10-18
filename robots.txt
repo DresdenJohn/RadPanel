@@ -1,0 +1,21 @@
+User-agent: Google
+Disallow: donate.aspx
+Disallow: irisPatch.aspx 
+Disallow: irisVote.aspx  
+Disallow: /Admin/ 
+Disallow: /Assets/ 
+Disallow: /bin/ 
+Disallow: /ckeditor/ 
+Disallow: /fancybox/ 
+Disallow: /ie/ 
+Disallow: /img/ 
+Disallow: /IrisCP/ 
+Disallow: /lib/ 
+Disallow: /Scripts/ 
+Disallow: /source/ 
+Disallow: /Styles/ 
+Disallow: /themes/ 
+Disallow: /user/
+
+User-agent: *
+Disallow: /

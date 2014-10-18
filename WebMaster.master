@@ -1,0 +1,241 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeFile="WebMaster.master.vb" Inherits="WebMaster" %>
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head id="Head1" runat="server">
+    <title>
+        <asp:ContentPlaceHolder id="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <meta name="author" content="Jonathan 'DresdenJohn' Gonzalez" />
+
+    <asp:ContentPlaceHolder id="meta" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500,400' rel='stylesheet' type='text/css'/>
+
+
+    <link rel="shortcut icon" href="./favicon.png" />
+
+    <link href="./Styles/reset.css" rel="stylesheet" />
+    <link href="./Styles/EgFlyffTheme.css" rel="stylesheet" />
+    <link href="./Styles/menuMain.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/masterModules.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/tooltips.css" rel="stylesheet" type="text/css" />
+    <link href="./Styles/EGFlyffColors.css" rel="stylesheet" />
+    <link href="./Styles/EGAfterRenderNov.css" rel="stylesheet" />
+    <link href="./Styles/EGInputNov.css" rel="stylesheet" />
+    <link href="./Styles/EGImagesNov.css" rel="stylesheet" />
+    <link href="./source/bgimg-slideshow.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./Styles/animate.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="./source/vote.js"></script>
+	<script type="text/javascript" src="./lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="./Scripts/sticky.full.js"></script>
+    <script type="text/javascript" src="./Scripts/jquery.smooth-scroll.js"></script>
+    <script type="text/javascript" src="./source/bgimg-slideshow.js"></script>
+    <script type="text/javascript" src="source/eternalScripts.js"></script>
+
+    <link rel="stylesheet" href="Scripts/sticky.full.css" type="text/css" />
+
+    <script type="text/javascript">
+
+        
+
+    </script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <p id="topBody" style="display:none"></p>
+    <form id="form1" runat="server">
+
+      <div id="topBar">
+        <div class="contentBox">
+          <div class="leftFloat">
+            <asp:Label ID="usernameTopBoxLabel" runat="server" Text=""></asp:Label>
+          </div>
+            <div class="rightFloat">
+              <asp:PlaceHolder ID="loggedOutTopPlaceholder" Visible="true" runat="server">
+                  <div class="topLinks"><a href='./default.aspx'><i class="fa-home"></i> Home</a> | <a class='fancybox' href='login.aspx'><i class="fa-gears"></i> Login</a></div></asp:PlaceHolder>
+                  <asp:PlaceHolder id="loggedInTopPlaceholder" Visible="false" runat="server">
+                  <div class="topLinks">
+                      <a href='./default.aspx'>Home</a> | <a href="Default.aspx?actn=DoLogout">Logout</a>
+                  </div>
+              </asp:PlaceHolder>
+             </div>
+          </div>
+       </div>
+       <div id="backgroundWrap">
+       <asp:Literal ID="notifyLabel" runat="server"></asp:Literal>
+            <a href="Default.aspx">
+                <div style="margin: 0px auto; width: 1920px; height: 320px; text-align:center;">
+                
+            </div></a>
+        <nav>
+	        <ul>
+                <li><a href="http://www.swiftgaming.net/forum/index.php" target="_blank">Forums</a></li>
+                <li><a href="#"><i class="fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa-twitter"></i></a></li>
+		        <li><a href="register.aspx">Play Now!</a></li>
+                <li><a href="#"><i class="fa-twitch"></i></a></li>
+                <li><a href="#"><i class="fa-youtube"></i></a></li>
+		        <li><a href="downloads.aspx">Download</a></li>
+                
+	        </ul>
+        </nav>
+       <div id="entireBody">
+
+
+          <asp:ScriptManager ID="mainScriptManager" runat="server">
+          </asp:ScriptManager>
+
+
+            <div id="entireContainer" class="smallTextDrop">
+                <%--<div class="classButtons">
+                    <div class="normalColumn">
+                        <a href="downloads.aspx">
+                            <div class="roll1">
+                                <img src="Assets/Roll/r3.png" class="animated bounce" id="rollOne" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="normalColumn">
+                        <a href="downloads.aspx">
+                            <div class="roll2">
+                                <img src="Assets/Roll/r1.png"  class="animated bounce" id="rollTwo" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="normalColumn">
+                        <a href="downloads.aspx">
+                            <div class="roll3">
+                                <img src="Assets/Roll/r2.png"  class="animated bounce" id="rollThree" />
+                            </div>
+                        </a>
+                    </div> 
+                </div>--%>
+
+                <asp:ContentPlaceHolder id="photoSlider" runat="server">
+
+                </asp:ContentPlaceHolder>
+
+                <div class="column-left">
+
+                    <div class="box">
+
+                        <h2>Flyff Server Rates</h2>
+                        <hr />
+                        <p>Experience Multiplier: ( <span style="color: #E59E7E">400x</span> )</p>
+                        <p>Drop Multiplier: ( <span style="color: #E59E7E">250x</span> )</p>
+                        <p>Penya Multiplier: ( <span style="color: #E59E7E">1500x</span> )</p>
+
+                    </div>
+
+                    <div class="box">
+                        <h2>Server Status</h2>
+                        <hr />
+                        <p>Global Databases: ( <asp:Label ID="serverStatus" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
+                        <p>Swift Gaming Forums: ( <asp:Label ID="Label2" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
+                        <p>Swift Flight Online: ( <asp:Label ID="Label1" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
+                         <p>Swift Accounts Registered: 
+                            ( <asp:Label ID="swiftAccountLabel" runat="server" Text="0" ForeColor="#E59E7E"></asp:Label> )</p>
+                    </div>
+
+                    <%--<a href="downloads.aspx"><div class="downloadImage"></div></a>
+
+                    <a href="register.aspx"><div class="registerImage"></div></a>
+
+                    <a href="http://www.swiftgaming.net/forum/index.php" target="_blank"><div class="forumImage"></div></a>--%>
+
+                </div>
+
+                <div id="main">
+                    <asp:ContentPlaceHolder id="contentPlaceholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <div class="column-right">
+                    
+                    <div class="box">
+                        <h2>Flyff Server Stats</h2>
+                        <hr />
+                        <p>Registered Accounts: 
+                            ( <asp:Label ID="irisAccountCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
+                        <p>In-game Char Count: 
+                            ( <asp:Label ID="irisCharCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
+                        <p>Registered Guilds: 
+                            ( <asp:Label ID="irisGuildCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
+                    </div>
+
+                    <asp:PlaceHolder ID="loginPlaceHolder" runat="server" Visible="false">
+                        <form id="loginForm" defaultbutton="button1">
+                            <div class="box">
+                                <h2>Sign In</h2>
+                                <hr />
+                                <p>E-Mail: </p><asp:TextBox CssClass="stretchForm" ID="loginUsernameText" runat="server"></asp:TextBox>
+                                <p>Password: </p><asp:TextBox CssClass="stretchForm" ID="loginPasswordText" TextMode="Password" runat="server"></asp:TextBox>
+                                <ul><li style="padding-top: 5px;"><asp:CheckBox ID="rememberMeLoginCheckbox" Text="Remember Me" runat="server" /></li></ul>
+                                <hr />
+                                <p style="margin: 0 auto; text-align: center;">
+                                    <asp:Button ID="loginButton" runat="server" Text="Login" OnClick="loginButton_Click" /> | 
+                                    <asp:Button ID="signUpButton" runat="server" Text="Sign Up" OnClick="signUpButton_Click" />
+                                </p>
+                            </div>
+                        </form>
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="accountLinksPlaceHolder" runat="server" Visible="false">
+                    
+                        <div class="box">
+                            <h2>Account Management</h2>
+                            <hr />
+                            <ul>
+                                <li><a href="myAccount.aspx">My Swift Account</a></li>
+                                <asp:PlaceHolder id="adminLinksPlaceHolder" runat="server" Visible="false">
+                                    <li><a href="./Admin/default.aspx">Enter Admin Control Panel</a></li>
+                                </asp:PlaceHolder>
+                                <li><a href="Default.aspx?actn=DoLogout">Sign Out</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="box">
+                            <h2>Flyff Account Management</h2>
+                            <hr />
+                            <ul>
+                                <li>Registered Flyff Accounts: ( 
+                                        <asp:Label ID="irisAccountNumber" ForeColor="#E59E7E" runat="server" Text="TBD"></asp:Label> )</li>
+                                <li><a href="registerFlyffAccount.aspx">Register a Flyff Account</a></li>
+                            </ul>
+                        </div>
+
+                    </asp:PlaceHolder>
+
+                </div>
+
+                <div class="clear"></div>
+
+            </div>
+
+            
+
+        </div>
+        </div>
+        <div id="footer">
+
+                <div class="contentBox">
+                    <p class="leftFloat smallTextDrop"><i class="fa-terminal"></i> Developed by Dresden<br /><br />Based on the Flexile theme for XenForo<asp:Label ID="verLabel" runat="server" Text="" Visible="false"></asp:Label></p>
+                    <p class="rightFloat smallTextDrop"><i class="fa-home"></i> Radical Flyff 2014</p>
+                </div>
+            
+        </div> 
+    </form>
+</body>
+</html>
