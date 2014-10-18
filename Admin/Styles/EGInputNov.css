@@ -1,0 +1,36 @@
+﻿.stretchHundred {
+    width: 160px !important;
+}
+
+.stretchForm {
+    width: 195px !important;
+}
+
+.unstyledButton {
+    margin:0;padding:0;
+    color: white;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    text-shadow: 2px 2px 2px 3px rgb(0,0,0) !important;
+}
+    .unstyledButton:hover {
+        color:rgba(255,192,54,0.8);
+        cursor:pointer;
+        text-shadow: 2px 2px 2px 3px rgb(0,0,0) !important;
+    }
+    #topBar input[type=submit] {
+        text-shadow: 2px 2px 2px 3px rgb(0,0,0) !important;
+    }
+    .unstyledButton * {
+        text-shadow: 2px 2px 2px 3px rgb(0,0,0);
+    }
+
+input[type=submit] {
+    font-size: 10px;
+}
+input[type=text]{
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

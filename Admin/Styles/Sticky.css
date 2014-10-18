@@ -1,0 +1,14 @@
+﻿
+html, body, form {
+height: 100%;
+}
+#entireBody {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -36px;
+}
+#footer, .push {
+height: 36px;
+clear: both;
+}

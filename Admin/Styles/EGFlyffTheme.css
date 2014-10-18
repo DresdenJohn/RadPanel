@@ -1,0 +1,391 @@
+﻿/*=====================================================================*/
+/* New Eternal Theme | Main Theme | January 2013 */
+/*=====================================================================*/
+
+/* ------ Global Styles -------- */
+
+html { 
+    background-color:#FFF;
+    min-height: 100%;
+
+}
+
+* {
+    /*font-family: 'Advent Pro', sans-serif !important;*/
+    /*font-family: 'Paprika', cursive !important;*/
+    font-family: 'Offside', cursive !important;
+}
+
+body, form, html {
+    line-height: 1.5;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+abbr {
+    font-size: 10px !important;
+}
+
+/* --------- Bg Image ----------*/
+
+#bg { position: fixed; top: 0; left: 0; z-index: -999999; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+/* ----------- Top ------------ */
+
+#topBar
+{
+    line-height:1;
+    width: 100%;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+
+    z-index: 99999;
+
+    /*border-bottom: 1px solid #65A5D1;*/
+    box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+}
+    #topBar .contentBox
+    {
+        width: 1100px;
+        margin: 0 auto;
+        padding-top: 13px;
+    }
+    #topBar .leftFloat{ float: left; color: #FFF; font-size:13px; }
+    #topBar .rightFloat{ float: right; font-size:13px; margin-top: -2px;}
+    #topBar .centered {
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        width: 300px;
+        height: 13px;
+        color: #FFF;
+        font-size: 13px;
+        margin-left: -150px;
+        text-align: center;
+    }
+    .topLinks:link, .topLinks:visited, .topLinks a, .centered a
+    {
+        color: #FFF;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    
+    .topLinks a:hover, .centered a:hover
+    {
+        color: rgba(255,192,54,0.8);
+        text-decoration: underline;
+    }
+
+header
+{
+    width: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px;
+}
+header img
+{
+    text-align:center;
+    margin: 0 auto;
+}
+
+nav
+{
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+/* ----- Sidebar ----------*/
+
+#entireContainer
+{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: White;
+    margin-bottom: 30px;
+}
+#backgroundWrap {
+    background-image: url('../Assets/flyffEGBG.png'), url('../Assets/bg_footer.jpg');
+    background-position: center top, center bottom;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+
+}
+#entireBody
+{
+    width: 1000px;
+    padding: 40px;
+    padding-top: 0px;
+    margin: 0 auto;
+    /*background: rgba(34,34,34,0.9);
+    margin: 0 auto;
+    box-shadow: -10px 0px 10px rgba(0,0,0,0.5), 10px 0px 10px rgba(0,0,0,0.5);*/
+}
+
+.sidebar
+{
+    width: 200px;
+    height: auto;
+    float:left;
+}
+
+    .sidebar .box
+    {
+        padding: 15px;
+        width: 200px;
+        
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 1) inset;
+	    
+        /*
+	    -moz-border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	    */
+
+	    /*border: 1px solid #000;*/
+	
+	    background: rgba(0,0,0,0.7);
+	    
+        text-align:left;
+    }
+    .sidebar h2
+    {
+        font-size: 14px;
+        color: #00D96D;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+    }
+    .sidebar hr
+    {
+        color: white;
+    }
+    
+    .registerButton, .loginButton, accountButton
+    {
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+        
+        font-size: 13px;
+        border: 1px solid rgba(0,0,0,0.6);
+	
+	    background: rgba(255,192,54,0.8);
+    
+        box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+        
+        border-radius: 5px;
+    }
+    
+    .registerButton{margin-bottom: 20px;}
+    
+    .registerButton:hover, .loginButton:hover, accountButton:hover
+    {
+        text-decoration: underline;
+        background: rgba(1, 55, 82, .95);
+        border: 1px solid black;
+    }
+    
+    .sidebar .box:link, .sidebar .box:visited, .sidebar .box a, #main .box a, #main .box:visited, #main .box:link,
+.minibox a, .minibox:link, .minibox:visited, #singleColLayout .box a, #singleColLayout .box a:visited, #singleColLayout .box a:link
+    {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: underline;
+    }
+    
+    .sidebar .box a:hover, #main .box a:hover, .minibox a:hover, #singleColLayout .box a:hover
+    {
+        color: #FFFF26;
+        text-decoration: underline;
+    }
+    
+    .sidebar .box p, .sidebar .box li
+    {
+        font-size: 10px;
+        color: rgba(255,255,255, 0.9);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+        line-height: 2;
+    }
+    
+/* ----- Main Content ----------*/
+
+
+#singleColLayout
+{
+    width: 100%;   
+}
+
+#main
+{
+    width: 410px;
+    height: auto;
+    float:left;
+    margin-left: 50px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+}
+    #main .box, #singleColLayout .box, .minibox
+    {
+        padding: 15px;
+        height: auto;
+        
+        margin-bottom: 20px;
+          
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 1) inset;
+	    
+        /*
+	    -moz-border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	    border: 1px solid #000;
+        */
+
+	    background: rgba(0,0,0,0.7);
+	    text-align:left;
+    }
+        #main .box
+        {
+            width: 480px;   
+        }
+        .minibox
+        {
+            width: auto;
+            background: rgba(1, 91, 134, .9) ;
+        }
+        #singleColLayout .box
+        {
+            width: 100%;
+        }
+    #main h2, #singleColLayout h2
+    {
+        font-size: 22px;
+        color: rgb(49,148,231);
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+    }
+    #main h4, #singleColLayout h4
+    {
+        font-size: 15px;
+        color: rgb(255, 192, 54);
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+    }
+    #main h3, #singleColLayout h3 
+    {
+        font-size: 10px;
+        color: rgba(255,255,255,0.5);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+    }
+    #main hr, #singleColLayout hr
+    {
+        color: white;
+    }
+    #main p, #singleColLayout p, #main li, #singleColLayout li
+    {
+        font-size: 11px !important;
+        /*margin-bottom: 15px !important;*/
+        color: rgba(255,255,255, 0.9) !important;
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8) !important;
+        line-height: 1.7 !important;
+    }
+
+#slideShowSection {
+    margin: 0 auto;
+    width: 450px;
+    height: 200px;
+    position: relative;
+    border: 4px solid rgba(34, 34, 34, 0.9);
+}
+.picCaption {
+    position:absolute;
+    font-size: 10px;
+    height: 37px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+    .picCaption .captionContain {
+        margin: 0 auto;
+        width: 450px;
+    }
+
+/* ---------- #footer ------------*/
+
+#footer
+{
+    zoom: 1.0;
+    line-height:1;
+    width: 950px;
+	margin:0 auto;
+	height:38px;
+	padding:5px 20px;
+	/* CSS 3 Stylings */
+	
+	box-shadow: 1px 1px 4px rgba(4, 4, 0, .8) inset;
+
+    /*
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+    */
+
+	z-index: 999;
+}
+    #footer .contentBox
+    {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 11px;
+        color: White;
+    }
+    
+    #footer .leftFloat{ float: left; color: #FFF; font-size:13px; }
+    #footer .rightFloat{ float: right; font-size:13px;}
+    #footer .centered{ margin: 0 auto; text-align: center;}
+    
+    .topLinks:link, .topLinks:visited, .topLinks a
+    {
+        color: #FFF;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    
+    .topLinks a:hover
+    {
+        color: rgba(255,192,54,0.8);
+        text-decoration: underline;
+    }
+    #footer p
+    {
+        font-size: 14px;   
+    }
+
+/* Additional Styles */
+
+#rankFrontTable {
+}
+    #rankFrontTable .headerRow td {
+        font-size: 12px;
+        color: #2693FF;
+        padding-bottom: 10px;
+        text-align:center;
+    }
+
+    #rankFrontTable td {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    #rankFrontTable .raceIcon, #rankFrontTable .classIcon {
+        vertical-align: middle;
+        width: 32px;
+        height: 32px;
+    }

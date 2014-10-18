@@ -1,0 +1,389 @@
+﻿/*=====================================================================*/
+/*======================== Master Style ===============================*/
+/*=====================================================================*/
+
+/* ------ Global Styles -------- */
+
+form, #entireContainer {height: 100%;}
+
+
+select * {
+    display: block !important;
+}
+option * {
+    display: block !important;
+}
+
+body
+{
+    background: url('../Assets/cloudycolors.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color: #333333;
+    font-family: 'Trebuchet MS',Helvetica,Arial,sans-serif;
+    
+}
+body, form, html
+{
+    line-height: 1.5;    
+}
+
+.clear{ clear:both; }
+.hidden{ display: none }
+.smallTextDrop{ text-shadow: 1px 1px 5px rgba(0,0,0,.5); }
+.normalTextDrop { text-shadow: 2px 2px 5px #000; }
+.strikethrough { text-decoration: line-through; color: rgba(255,255,255,0.3) !important;}
+
+#sidebar li, #singleColLayout li, #main li
+{
+    list-style-type: square;
+    margin-left: 30px;   
+}
+#newsActions
+{
+    margin: 0 auto;
+    text-align:center;
+}
+#newsActions li
+{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+}
+
+/* ----------- Top ------------ */
+
+#topBar
+{
+    line-height:1;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    /*
+    position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+    */
+    border-bottom: 1px solid #65A5D1;
+    
+    box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+}
+    #topBar .contentBox
+    {
+        width: 1100px;
+        margin: 0 auto;
+        padding-top: 9px;
+    }
+    
+    #topBar .leftFloat{ float: left; color: #FFF; font-size:13px; }
+    #topBar .rightFloat{ float: right; font-size:13px;}
+    #topBar .centered{ margin: 0 auto; text-align: center; position: fixed; top: 10px; left: 50%;}
+    
+    .topLinks:link, .topLinks:visited, .topLinks a
+    {
+        color: #FFF;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    
+    .topLinks a:hover
+    {
+        color: rgba(255,192,54,0.8);
+        text-decoration: underline;
+    }
+
+header
+{
+    width: auto;
+    margin: 0 auto;
+    margin-top: 25px;
+    /*margin-top: 60px;*/
+    text-align: center;
+    padding: 0px;
+}
+header img
+{
+    text-align:center;
+    margin: 0 auto;
+}
+
+nav
+{
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+/* ----- Sidebar ----------*/
+
+#entireContainer
+{
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: White;
+    margin-bottom: 30px;
+}
+#entirebody
+{
+    margin-bottom: 60px;
+    zoom: 0.9;
+}
+
+#sidebar
+{
+    width: 225px;
+    height: auto;
+    float:right;
+    margin-left: 20px;
+}
+
+    #sidebar .box
+    {
+        padding: 15px;
+        width: 225px;
+        
+        margin-bottom: 20px;
+        box-shadow:5px 5px 10px rgba(0, 0, 0, .7);
+	
+	    -moz-border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	    
+	    border: 1px solid #000;
+	
+	    background: rgba(0,0,0, 0.8);
+	    
+        text-align:left;
+    }
+    #sidebar h2
+    {
+        font-size: 15px;
+        color: rgb(255, 192, 54);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+    }
+    #sidebar hr
+    {
+        color: white;
+    }
+    
+    .registerButton, .loginButton, accountButton
+    {
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+        
+        font-size: 13px;
+        border: 1px solid rgba(0,0,0,0.6);
+	
+	    background: rgba(255,192,54,0.8);
+    
+        box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+        
+        border-radius: 5px;
+    }
+    
+    .registerButton{margin-bottom: 20px;}
+    
+    .registerButton:hover, .loginButton:hover, accountButton:hover
+    {
+        text-decoration: underline;
+        background: rgba(1, 55, 82, .95);
+        border: 1px solid black;
+    }
+    
+    #sidebar .box:link, #sidebar .box:visited, #sidebar .box a, #main .box a, #main .box:visited, #main .box:link,
+.minibox a, .minibox:link, .minibox:visited, #singleColLayout .box a, #singleColLayout .box a:visited, #singleColLayout .box a:link
+    {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: underline;
+    }
+    
+    #sidebar .box a:hover, #main .box a:hover, .minibox a:hover, #singleColLayout .box a:hover
+    {
+        color: #FFFF26;
+        text-decoration: underline;
+    }
+    
+    #sidebar .box p, #sidebar .box li
+    {
+        font-size: 12px;
+        color: rgba(255,255,255, 0.9);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+        line-height: 2;
+    }
+    
+/* ----- Main Content ----------*/
+
+
+#singleColLayout
+{
+    width: 100%;   
+}
+
+#main
+{
+    width: 650px;
+    height: auto;
+    float:left;
+    margin-left: -35px;
+    margin-bottom: 30px;
+}
+    #main .box, #singleColLayout .box, .minibox
+    {
+        padding: 20px;
+        height: auto;
+        
+        margin-bottom: 20px;
+          
+        box-shadow:5px 5px 10px rgba(0, 0, 0, .7);
+	
+	    -moz-border-radius: 10px;
+	    -webkit-border-radius: 10px;
+	    border-radius: 10px;
+	    
+	    border: 1px solid #000;
+	    background: rgba(0,0,0, 0.8);
+	    /*
+	    background: rgba(255,191,0, 0.7);
+        border: 1px solid #015b86;
+	    */
+	    text-align:left;
+    }
+        #main .box
+        {
+            width: 640px;   
+        }
+        .minibox
+        {
+            width: auto;
+            background: rgba(1, 91, 134, .9) ;
+        }
+        #singleColLayout .box
+        {
+            width: 100%;
+        }
+    #main h2, #singleColLayout h2
+    {
+        font-size: 22px;
+        color: rgb(255, 192, 54);
+        /*
+        color: rgba(0,109,217,0.8);
+        color: rgba(0,0,0, 0.9);*/
+        text-shadow: 3px 3px 3px rgba(0,0,0,1);
+    }
+    #main h4, #singleColLayout h4
+    {
+        font-size: 15px;
+        color: rgb(255, 192, 54);
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+    }
+    #main h3, #singleColLayout h3 
+    {
+        font-size: 11px;
+        color: rgba(255,255,255,0.5);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+    }
+    #main hr, #singleColLayout hr
+    {
+        color: white;
+    }
+    #main p, #singleColLayout p, #main li, #singleColLayout li
+    {
+        font-size: 12px;
+        margin-bottom: 15px;
+        color: rgba(255,255,255, 0.9);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+        line-height: 1.7;
+    }
+    
+/* ---------- #footer ------------*/
+
+#footer
+{
+    zoom: 1.0;
+    line-height:1;
+    width: 900px;
+	margin:0 auto;
+	height:38px;
+	padding:0px 30px 0px 30px;
+	/* CSS 3 Stylings */
+	
+	box-shadow:0px 5px 10px rgba(0, 0, 0, .5);
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*position: fixed;
+	bottom: 0;
+	left: 0;*/
+	z-index: 999;
+}
+    #footer .contentBox
+    {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 11px;
+        color: White;
+    }
+    
+    #footer .leftFloat{ float: left; color: #FFF; font-size:13px; }
+    #footer .rightFloat{ float: right; font-size:13px;}
+    #footer .centered{ margin: 0 auto; text-align: center;}
+    
+    .topLinks:link, .topLinks:visited, .topLinks a
+    {
+        color: #FFF;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    
+    .topLinks a:hover
+    {
+        color: rgba(255,192,54,0.8);
+        text-decoration: underline;
+    }
+    #footer p
+    {
+        font-size: 14px;   
+    }
+/*
+#footer
+{
+    list-style:none;
+	width:700px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: center;
+
+	box-shadow:0px 5px 10px rgba(0, 0, 0, .5);
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+
+	background: #014464;
+	
+	/* CSS 3 Stylings 
+	
+}
+#footer .ending
+{
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+    color: #EEE;
+    text-shadow: 1px 1px 3px #000;
+}*/
+	

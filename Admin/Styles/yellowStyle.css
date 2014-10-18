@@ -1,0 +1,35 @@
+﻿#footer, .menu, #topBar
+{
+    background: rgba(221,149,0,0.7);
+}
+#topBar .leftFloat, .topLinks:link, .topLinks:visited, .topLinks a, .menu li a, footer .ending
+{
+    color: #FFF; 
+    text-shadow: 2px 2px 3px #000;
+}
+.registerButton, .loginButton, .registerButtons
+{
+    background:  rgba(255,192,54,0.9);
+    color: rgba(0,0,0,0.7);
+}
+#sidebar .box:link, #sidebar .box:visited, #sidebar .box a, #main .box a, #main .box a:link, #main .box a:visisted, #main .box:visited, #main .box:link,
+.minibox a, .minibox:link, .minibox:visited
+{
+    color: rgba(255,255,255,0.7);
+}
+.registerButton:hover, .loginButton:hover, .registerButtons:hover
+{
+    background: rgba(255,192,54,1);
+    color: #FFFF26;
+}
+.classic
+{
+    background: rgba(255,192,54,.8);
+    color: black;
+}
+.registerWindow h2, .loginWindow h2
+{
+    color: rgb(255, 192, 54);
+    text-shadow: 2px 2px 3px #000;
+}
+    
