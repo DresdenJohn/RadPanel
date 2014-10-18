@@ -1,0 +1,18 @@
+body {
+	behavior: url("ie/csshover3.htc");
+}
+.menu li .drop {
+	background:url("dropie.png") no-repeat right 5px;
+}
+.menu li:hover .drop {
+	background:url("dropiehover.png") no-repeat right 4px;
+}
+.dark_dropdown li .drop {
+	background:url("dropie_dark.png") no-repeat right 5px;
+}
+.dark_dropdown li:hover .drop {
+	background:url("dropie_darkhover.png") no-repeat right 5px;
+}
+.dark_dropdown a.parent, .dark_dropdown a.parent:hover {
+	background: url("drop2ie_dark.png") right center no-repeat;
+}

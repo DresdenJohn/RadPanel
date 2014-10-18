@@ -1,0 +1,536 @@
+﻿/*=====================================================================*/
+/* New Eternal Theme | Main Theme | January 2013 */
+/*=====================================================================*/
+
+/* ------ Global Styles -------- */
+
+html { 
+    background-color:#383838;
+    min-height: 100%;
+
+}
+
+p, h1, h2, h3, h4, h5, h6, a, li, span, div {
+    font-family: 'Maven Pro', sans-serif !important;
+}
+
+i {
+    font-family: 'FontAwesome' !important;
+}
+
+body, form, html {
+    line-height: 1.5;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+abbr {
+    font-size: 10px !important;
+}
+
+/* --------- Bg Image ----------*/
+
+#bg { position: fixed; top: 0; left: 0; z-index: -999999; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+/* ----------- Top ------------ */
+
+#topBar
+{
+    line-height:1;
+    width: 100%;
+    height: 36px;
+    top: 0;
+    left: 0;
+    border-bottom: 5px solid #910000; /*#D90000*/
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3) !important;
+    display:block;
+    z-index: 99999;
+}
+#topBar {
+    background: #202020 !important;
+}
+    #topBar .contentBox
+    {
+        max-width: 1170px;
+        width: 1100px;
+        margin: 0 auto;
+        padding-top: 13px;
+    }
+    #topBar * {
+        color: rgba(255,255,255,.75);
+        -webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		transition: all 0.2s; 
+    }
+    #topBar .leftFloat{ float: left; font-size:11px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3) !important; }
+    #topBar .rightFloat{ float: right; font-size:11px;  margin-top: -2px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3) !important;}
+    #topBar .centered {
+        position: absolute;
+        top: 13px;
+        left: 50%;
+        width: 300px;
+        height: 13px;
+        color: #000;
+        font-size: 11px;
+        margin-left: -150px;
+        text-align: center;
+    }
+    .topLinks:link, .topLinks:visited, .topLinks a, .centered a
+    {
+        color: #444444;
+        text-decoration: none !important;
+        padding: 10px;
+    }
+    
+    .topLinks a:hover, .centered a:hover
+    {
+        text-decoration: none !important;
+        background-color: #777777;
+        color: rgb(255,255,255) !important;
+        border-radius: 2px;
+    }
+
+header
+{
+    width: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 0px;
+}
+header img
+{
+    text-align:center;
+    margin: 0 auto;
+}
+
+nav
+{
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+/* ----- Sidebar ----------*/
+
+#entireContainer
+{
+    max-width: 1100px;
+    min-width: 1100px;
+    margin: 0 auto !important;
+    overflow:hidden;
+    position:relative;
+    height: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: White;
+    margin-bottom: 0px;
+}
+body {
+    background-color: #383838;
+
+}
+#backgroundWrap {
+    max-width: 1920px;
+    min-width: 1000px;
+    margin: 0 auto !important;
+    overflow:hidden;
+    position:relative;
+    background-image: url('../Assets/default.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #383838;
+}
+#entireBody
+{
+    max-width: 1100px;
+    min-width: 1100px;
+    margin: 0 auto !important;
+    overflow:hidden;
+    position:relative;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    margin-top: 20px !important;
+}
+
+.normalColumn 
+{
+    width: 60%;
+    height: auto;
+    display: inline-block;
+}
+
+.column-left
+{
+    width: 20%;
+    height: auto;
+    float:left;
+}
+.column-right 
+{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+
+    .column-left .box, .column-right .box
+    {
+        padding: 15px;
+        
+        border: 2px solid #D90000;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5) ;
+	    background: #202020;
+        text-align:left;
+    }
+
+    .column-left .box 
+    {
+        width: 85%;
+    }
+    .column-right .box 
+    {
+        width: 80%;
+    }
+
+    .column-left h2, .column-right h2
+    {
+        font-size: 14px;
+        color: #00D96D;
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+    }
+    .column-left hr, .column-right hr
+    {
+        color: white;
+    }
+    
+    .registerButton, .loginButton, accountButton
+    {
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+        
+        font-size: 13px;
+        border: 1px solid rgba(0,0,0,0.6);
+	
+	    background: rgba(255,192,54,0.8);
+    
+        box-shadow: 0px 5px 10px rgba(0,0,0,.5);
+        
+        border-radius: 5px;
+    }
+    
+    .registerButton{margin-bottom: 20px;}
+    
+    .registerButton:hover, .loginButton:hover, accountButton:hover
+    {
+        text-decoration: underline;
+        background: rgba(1, 55, 82, .95);
+        border: 1px solid black;
+    }
+    
+    .column-left .box:link, .column-left .box:visited, .column-left .box a, #main .box a, #main .box:visited, #main .box:link,
+.minibox a, .minibox:link, .minibox:visited, #singleColLayout .box a, #singleColLayout .box a:visited, #singleColLayout .box a:link
+    .column-right .box:link, .column-right .box:visited, .column-right .box a
+    {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: underline;
+    }
+    
+    .column-left .box a:hover, #main .box a:hover, .minibox a:hover, #singleColLayout .box a:hover, .column-right .box a:hover
+    {
+        color: #FFFF26;
+        text-decoration: underline;
+    }
+    
+    .column-left .box p, .column-left .box li, .column-right .box p, .column-right .box li
+    {
+        font-size: 10px;
+        color: rgba(255,255,255, 0.9);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+        line-height: 2;
+    }
+    
+/* ----- Main Content ----------*/
+
+
+#singleColLayout
+{
+    width: 100%;   
+}
+
+#mainLinks 
+{
+    width: 1280px;
+}
+
+#main
+{
+    
+    width: 60%;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+}
+    #main .box, #singleColLayout .box, .minibox
+    {
+        width: 90%;
+        padding: 15px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+          
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, .5) ;
+        border: 2px solid #D90000;
+	    background: #202020;
+	    text-align:left;
+    }
+        .minibox
+        {
+            width: auto;
+            background: rgba(1, 91, 134, .9) ;
+        }
+        #singleColLayout .box
+        {
+            width: 100%;
+        }
+    #main h2, #singleColLayout h2
+    {
+        font-size: 22px;
+        color: rgb(49,148,231);
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.6);
+    }
+    #main h4, #singleColLayout h4
+    {
+        font-size: 15px;
+        color: rgb(255, 192, 54);
+        text-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+    }
+    #main h3, #singleColLayout h3 
+    {
+        font-size: 10px;
+        color: rgba(255,255,255,0.5);
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8);
+    }
+    #main hr, #singleColLayout hr
+    {
+        color: white;
+    }
+    #main p, #singleColLayout p, #main li, #singleColLayout li
+    {
+        font-size: 11px !important;
+        /*margin-bottom: 15px !important;*/
+        color: rgba(255,255,255, 0.9) !important;
+        text-shadow: 2px 2px 7px rgba(0,0,0,.8) !important;
+        line-height: 1.7 !important;
+    }
+
+#slideShowSection {
+    margin: 0 auto;
+    width: 450px;
+    height: 200px;
+    position: relative;
+    border: 4px solid rgba(34, 34, 34, 0.9);
+}
+.picCaption {
+    position:absolute;
+    font-size: 10px;
+    height: 37px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}
+    .picCaption .captionContain {
+        margin: 0 auto;
+        width: 450px;
+    }
+
+/* ---------- #footer ------------*/
+
+#footer
+{
+    zoom: 1.0;
+    line-height:1;
+    width: 100%;
+	height:100px;
+    border-top: 5px solid #910000;
+	z-index: 999;
+}
+    #footer .contentBox
+    {
+        width: 1100px;
+        margin: 0 auto;
+        padding-top: 20px;
+        color: rgba(255,255,255,.75) !important;
+    }
+    
+    #footer .leftFloat{ float: left; color: #eee; font-size:12px; }
+    #footer .rightFloat{ float: right; color: #eee; font-size:12px;}
+    
+    .topLinks:link, .topLinks:visited, .topLinks a
+    {
+        color: #FFF;
+        text-decoration: underline;
+        padding: 5px;
+    }
+    
+    .topLinks a:hover
+    {
+        color: rgba(255,192,54,0.8);
+        text-decoration: underline;
+    }
+    #footer p
+    {
+        font-size: 14px;   
+    }
+
+/* Additional Styles */
+
+#rankFrontTable {
+}
+    #rankFrontTable .headerRow td {
+        font-size: 12px;
+        color: #2693FF;
+        padding-bottom: 10px;
+        text-align:center;
+    }
+
+    #rankFrontTable td {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    #rankFrontTable .raceIcon, #rankFrontTable .classIcon {
+        vertical-align: middle;
+        width: 32px;
+        height: 32px;
+    }
+
+
+/*======================================================================*/
+
+nav {
+  background: #910000 url('../Assets/main-bar-gradient.png') repeat-x 0 0;
+  color: #FFF;
+  display: block;
+  overflow: hidden;
+  width: 100%; 
+  margin: 0 auto;
+  height: 40px;
+  border-top: 3px solid #202020;
+  border-bottom: 3px solid #202020;
+}
+
+  nav ul {
+    margin: 0 auto;
+    padding-top: 7px;
+    width: 522px;
+    
+  }
+
+    nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: 15px;
+        border-radius: 3px;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+      
+        -webkit-transition: all 0.2s;
+	    -moz-transition: all 0.2s;
+	    -ms-transition: all 0.2s;
+	    -o-transition: all 0.2s;
+	    transition: all 0.2s; 
+
+      
+    }
+        nav ul li .active {
+            background-color: rgb( 40, 44, 47 );
+            color: rgb( 255, 255, 255 );
+        }
+        nav ul li:last-child {
+            margin-right: 0px;
+        }
+      
+      nav > ul > li > a > .caret {
+        border-top: 4px solid #aaa;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+  
+        -webkit-transition: color 0.1s linear;
+     	  -moz-transition: color 0.1s linear;
+       	-o-transition: color 0.1s linear;
+          transition: color 0.1s linear; 
+      }
+
+      nav > ul > li > a {
+        color: #fff;
+        display: block;
+        line-height: 25px;
+        padding: 0 10px;
+        text-decoration: none;
+        text-shadow: 1px 1px 3px rgba(0,0,0,.1);
+      }
+
+        nav > ul > li:hover {
+          background-color: rgb( 40, 44, 47 );
+        }
+
+        nav > ul > li:hover > a {
+          color: rgb( 255, 255, 255 );
+        }
+
+        nav > ul > li:hover > a > .caret {
+          border-top-color: rgb( 255, 255, 255 );
+        }
+      
+      nav > ul > li > div {
+        background-color: rgb( 40, 44, 47 );
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+        display: none;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        width: 165px;
+        visibility: hidden;
+  
+        -webkit-transiton: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -ms-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        -transition: opacity 0.2s;
+      }
+
+        nav > ul > li:hover > div {
+          display: block;
+          opacity: 1;
+          visibility: visible;
+        }
+
+          nav > ul > li > div ul > li {
+            display: block;
+          }
+
+            nav > ul > li > div ul > li > a {
+              color: #fff;
+              display: block;
+              padding: 12px 24px;
+              text-decoration: none;
+            }
+
+              nav > ul > li > div ul > li:hover > a {
+                background-color: rgba( 255, 255, 255, 0.1);
+              }
+  

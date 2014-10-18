@@ -1,0 +1,35 @@
+﻿/*
+                                __      _ _                   _   
+                               / _|    | (_)                 | |  
+ _ __ ___   __ _ _ __ ___ ___ | |_ ___ | |_  ___   _ __   ___| |_ 
+| '_ ` _ \ / _` | '__/ __/ _ \|  _/ _ \| | |/ _ \ | '_ \ / _ \ __|
+| | | | | | (_| | | | (_| (_) | || (_) | | | (_) || | | |  __/ |_ 
+|_| |_| |_|\__,_|_|  \___\___/|_| \___/|_|_|\___(_)_| |_|\___|\__|
+                                                                  
+*/
+
+/* COMMON CLASSES */
+.break { clear:both; }
+
+.headerimg { background-position: center top; background-repeat: no-repeat; width:100%; height: 477px; position:absolute; background-size: cover; }
+
+
+/* HEADER TEXT */
+#headertxt { width:900px; margin:0 auto; clear:both; position:relative;}
+#firstline {  color:#fff;  font-size:12px; }
+#secondline {color:#fff; text-decoration:none; font-size:60px; padding:0 13px 10px; float:left; display:block; clear:both; }
+#secondline:hover { text-decoration:underline; color:#7F000C; }
+
+.pictured { color:#FFF; font-size:12px; text-transform:uppercase; clear:both; }
+.pictured a { font-size:12px; font-style:italic; letter-spacing:0; text-transform:none; color:#FFF; text-decoration:none; }
+.pictured a:hover { text-decoration:underline; }
+
+/* CONTROLS */
+.btn { height:32px; width:32px; float:left; cursor:pointer; }
+#back { background-image:url("../assets/btn_back.png"); }
+#next { background-image:url("../assets/btn_next.png"); }
+#control { background-image:url("../assets/btn_pause.png"); }
+
+/* HEADER HAVIGATION */
+#headernav-outer { position:absolute; bottom: 0px; margin:0 auto; width:900px; z-index: 9000;}
+#headernav { position: absolute; right: 0; bottom: 2px;}

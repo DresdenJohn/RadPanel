@@ -1,0 +1,40 @@
+﻿.classButtons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.roll1, .roll2, .roll3 {
+
+    margin: 0 auto;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		transition: all 0.2s; 
+    
+    
+    
+}
+    .downloadImage:hover, .registerImage:hover, .forumImage:hover, .wikiImage:hover, .voteImage:hover, .donateImage:hover {
+        cursor: pointer;
+    }
+.roll1 {
+    background: url('../Assets/Roll/roll1.png');
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.roll1, .roll2, .roll3 {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+.roll2 {
+    background: url('../Assets/Roll/roll2.png');
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+.roll3 {
+    background: url('../Assets/Roll/roll3.png');
+    background-position: center center;
+    background-repeat:no-repeat;
+}
