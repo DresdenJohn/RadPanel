@@ -82,11 +82,11 @@
         <nav>
 	        <ul>
                 <li><a href="http://www.swiftgaming.net/forum/index.php" target="_blank">Forums</a></li>
-                <li><a href="#"><i class="fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fa-twitter"></i></a></li>
+                <li><a href="#NoFacebookYet_Sorry!"><i class="fa-facebook-square"></i></a></li>
+                <li><a href="#NoTwitterYet_Sorry!"><i class="fa-twitter"></i></a></li>
 		        <li><a href="register.aspx">Play Now!</a></li>
-                <li><a href="#"><i class="fa-twitch"></i></a></li>
-                <li><a href="#"><i class="fa-youtube"></i></a></li>
+                <li><a href="#NoKappaYet_Sorry!"><i class="fa-twitch"></i></a></li>
+                <li><a href="#NoYouTubeYet_Sorry!"><i class="fa-youtube"></i></a></li>
 		        <li><a href="downloads.aspx">Download</a></li>
                 
 	        </ul>
@@ -129,69 +129,6 @@
 
                 <div class="column-left">
 
-                    <div class="box">
-
-                        <h2>Flyff Server Rates</h2>
-                        <hr />
-                        <p>Experience Multiplier: ( <span style="color: #E59E7E">400x</span> )</p>
-                        <p>Drop Multiplier: ( <span style="color: #E59E7E">250x</span> )</p>
-                        <p>Penya Multiplier: ( <span style="color: #E59E7E">1500x</span> )</p>
-
-                    </div>
-
-                    <div class="box">
-                        <h2>Server Status</h2>
-                        <hr />
-                        <p>Global Databases: ( <asp:Label ID="serverStatus" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
-                        <p>Swift Gaming Forums: ( <asp:Label ID="Label2" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
-                        <p>Swift Flight Online: ( <asp:Label ID="Label1" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
-                         <p>Swift Accounts Registered: 
-                            ( <asp:Label ID="swiftAccountLabel" runat="server" Text="0" ForeColor="#E59E7E"></asp:Label> )</p>
-                    </div>
-
-                    <%--<a href="downloads.aspx"><div class="downloadImage"></div></a>
-
-                    <a href="register.aspx"><div class="registerImage"></div></a>
-
-                    <a href="http://www.swiftgaming.net/forum/index.php" target="_blank"><div class="forumImage"></div></a>--%>
-
-                </div>
-
-                <div id="main">
-                    <asp:ContentPlaceHolder id="contentPlaceholder" runat="server">
-                    </asp:ContentPlaceHolder>
-                </div>
-
-                <div class="column-right">
-                    
-                    <div class="box">
-                        <h2>Flyff Server Stats</h2>
-                        <hr />
-                        <p>Registered Accounts: 
-                            ( <asp:Label ID="irisAccountCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
-                        <p>In-game Char Count: 
-                            ( <asp:Label ID="irisCharCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
-                        <p>Registered Guilds: 
-                            ( <asp:Label ID="irisGuildCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
-                    </div>
-
-                    <asp:PlaceHolder ID="loginPlaceHolder" runat="server" Visible="false">
-                        <form id="loginForm" defaultbutton="button1">
-                            <div class="box">
-                                <h2>Sign In</h2>
-                                <hr />
-                                <p>E-Mail: </p><asp:TextBox CssClass="stretchForm" ID="loginUsernameText" runat="server"></asp:TextBox>
-                                <p>Password: </p><asp:TextBox CssClass="stretchForm" ID="loginPasswordText" TextMode="Password" runat="server"></asp:TextBox>
-                                <ul><li style="padding-top: 5px;"><asp:CheckBox ID="rememberMeLoginCheckbox" Text="Remember Me" runat="server" /></li></ul>
-                                <hr />
-                                <p style="margin: 0 auto; text-align: center;">
-                                    <asp:Button ID="loginButton" runat="server" Text="Login" OnClick="loginButton_Click" /> | 
-                                    <asp:Button ID="signUpButton" runat="server" Text="Sign Up" OnClick="signUpButton_Click" />
-                                </p>
-                            </div>
-                        </form>
-                    </asp:PlaceHolder>
-
                     <asp:PlaceHolder ID="accountLinksPlaceHolder" runat="server" Visible="false">
                     
                         <div class="box">
@@ -217,6 +154,66 @@
                         </div>
 
                     </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="loginPlaceHolder" runat="server" Visible="false">
+                        <form id="loginForm" defaultbutton="button1">
+                            <div class="box">
+                                <h2>Sign In</h2>
+                                <hr />
+                                <p>E-Mail: </p><asp:TextBox CssClass="stretchForm" ID="loginUsernameText" runat="server"></asp:TextBox>
+                                <p>Password: </p><asp:TextBox CssClass="stretchForm" ID="loginPasswordText" TextMode="Password" runat="server"></asp:TextBox>
+                                <ul><li style="padding-top: 5px;"><asp:CheckBox ID="rememberMeLoginCheckbox" Text="Remember Me" runat="server" /></li></ul>
+                                <hr />
+                                <p style="margin: 0 auto; text-align: center;">
+                                    <asp:Button ID="loginButton" runat="server" Text="Login" OnClick="loginButton_Click" /> | 
+                                    <asp:Button ID="signUpButton" runat="server" Text="Sign Up" OnClick="signUpButton_Click" />
+                                </p>
+                            </div>
+                        </form>
+                    </asp:PlaceHolder>
+
+                    <div class="box">
+
+                        <h2>Flyff Server Rates</h2>
+                        <hr />
+                        <p>Experience Multiplier: ( <span style="color: #E59E7E">400x</span> )</p>
+                        <p>Drop Multiplier: ( <span style="color: #E59E7E">250x</span> )</p>
+                        <p>Penya Multiplier: ( <span style="color: #E59E7E">1500x</span> )</p>
+
+                    </div>
+
+                    <div class="box">
+                        <h2 style="">Server Status</h2>
+                        <hr />
+                        <p>Global Databases: ( <asp:Label ID="serverStatus" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
+                        <p>Swift Gaming Forums: ( <asp:Label ID="Label2" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
+                        <p>Swift Flight Online: ( <asp:Label ID="Label1" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
+                         <p>Swift Accounts Registered: 
+                            ( <asp:Label ID="swiftAccountLabel" runat="server" Text="0" ForeColor="#E59E7E"></asp:Label> )</p>
+                    </div>
+
+                    <div class="box">
+                        <h2>Flyff Server Stats</h2>
+                        <hr />
+                        <p>Registered Accounts: 
+                            ( <asp:Label ID="irisAccountCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
+                        <p>In-game Char Count: 
+                            ( <asp:Label ID="irisCharCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
+                        <p>Registered Guilds: 
+                            ( <asp:Label ID="irisGuildCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
+                    </div>
+
+                    
+                </div>
+
+                <div id="main">
+                    <asp:ContentPlaceHolder id="contentPlaceholder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <div class="column-right">
+                    
+                    
 
                 </div>
 

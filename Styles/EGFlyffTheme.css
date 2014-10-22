@@ -125,7 +125,6 @@ nav
     position:relative;
     height: 100%;
     margin-top: 20px;
-    text-align: center;
     color: White;
     margin-bottom: 0px;
 }
@@ -158,7 +157,7 @@ body {
 
 .normalColumn 
 {
-    width: 60%;
+    width: 90%;
     height: auto;
     display: inline-block;
 }
@@ -274,14 +273,16 @@ body {
 #main
 {
     
-    width: 60%;
+    width: 73%;
     height: auto;
     display: inline-block;
     margin: 0 auto;
+    margin-left: 20px;
+
 }
     #main .box, #singleColLayout .box, .minibox
     {
-        width: 90%;
+        width: 100%;
         padding: 15px;
         height: auto;
         margin: 0 auto;
