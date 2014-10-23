@@ -37,11 +37,11 @@ Partial Class WebMaster
             Case "login"
                 sendNotification("Welcome back, " + g_username)
             Case "firstLogin"
-                sendNotification("Welcome to Swift Gaming! Your Network account is now ready for use.<br/>You can now register for in-game accounts.")
+                sendNotification("Welcome to Radical Flyff! Your Network account is now ready for use.<br/>You can now register for in-game accounts.")
             Case "firstLoginWIris"
-                sendNotification("Thanks for joining Swift Gaming!<br/>Both your Network and Flyff accounts are ready for use!")
+                sendNotification("Thanks for joining Radical Flyff!<br/>Both your Network and Flyff accounts are ready for use!")
             Case "flyffRegister"
-                sendNotification("Swift Flight Online Account Registered! You can go play now.")
+                sendNotification("Radical Flyff Account Registered! You can go play now.")
             Case "voted"
                 sendNotification("Thanks for Voting! Your chosen character has been rewarded.")
             Case "invalidVote"
@@ -132,7 +132,7 @@ Partial Class WebMaster
 
         refreshCookie()
 
-        swiftAccountLabel.Text = webFunc.countSwiftAccounts()
+        ' swiftAccountLabel.Text = webFunc.countSwiftAccounts()
 
         irisAccountCount.Text = flyffFunc.countFlyffAccounts()
         irisCharCount.Text = flyffFunc.countFlyffChars()

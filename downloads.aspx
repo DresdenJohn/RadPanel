@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="contentPlaceholder" Runat="Server">
     
     <div class="box">
-        <h2>Swift Flight Online Downloads</h2>
+        <h2>Radical Flyff Downloads</h2>
         <hr />
 
         <style type="text/css">
@@ -89,8 +89,8 @@
 				<table id="requirementsTable">
 					<thead>
 						<tr>
-							<th scope="col" class="first" style="width: 125px;"></th>
-							<th scope="col">Minimum</th>
+							<th scope="col" class="first" style="width: 150px;"></th>
+							<th scope="col" style="width:200px;">Minimum</th>
 							<th scope="col">Suggested</th>
 						</tr>
 					</thead>
@@ -107,13 +107,13 @@
 						</tr>
 						<tr>
 							<th scope="row">Video Card</th>
-							<td>ATI Radeon 9500 / nVidia 5200 (128mb memory)</td>
+							<td>ATI Radeon 9500 / nVidia 5200 - 128mb memory</td>
 							<td>Geforce 6600 GT / 256 mb video memory or better</td>
 						</tr>
 						<tr>
 							<th scope="row">Operating System</th>
-							<td>Windows XP, Vista, 7, 8</td>
-							<td>Windows XP, Vista, 7, 8</td>
+							<td>Windows XP, Vista, 7, 8, 8.1, 10 (Tech Preview)</td>
+							<td>Windows XP, Vista, 7, 8, 8.1, 10 (Tech Preview)</td>
 						</tr>
 						<tr>
 							<th scope="row">Hard Drive</th>
@@ -130,28 +130,13 @@
 			</div>
 
             <hr />
-			<p style="text-align:center">Download the <strong>Swift Flight Online client</strong> below to start playing.</p>
+			<p style="text-align:center">Download the <strong>Radical Flyff Client</strong> below to start playing.</p>
 			<div class="btn_download downloadLinks2 downloadButtons" style="background: url('./Assets/downloadButton5.png') center center;">
-				<a href="https://mega.co.nz/#!jcZUEAqJ!BCDufyYmM2C_OUrImTMn6QdgnHuSo4N6DOQVEH2wp-U" target="_blank"><span style="padding-left: 90px;">Download From Mega</span></a>
+				<a href="#NotYetAmigo" target="_blank"><span style="padding-left: 90px;">Download From Mega</span></a>
 			</div>
             <div class="btn_download downloadLinks2 downloadButtons" style="background: url('./Assets/downloadButton6.png') center center;">
-				<a href="http://www.speedyshare.com/7kCSk/Client.rar" target="_blank"><span style="padding-left: 90px;">Download From SpeedyShare</span></a>
+				<a href="#Nope.avi" target="_blank"><span style="padding-left: 90px;">Download From SpeedyShare</span></a>
 			</div>
-
-<%--			<h4>Download using a Mirror Site</h4>
-			<h3>Choose any of the below mirrors to download the <strong>Swift Flight Online client</strong>.</h3>
-
-            <div style="margin: 0 auto; text-align:center;" class="downloadButtons" >
-			    <div class="btn_download2 downloadLinks" style="background: url('./Assets/downloadButton6.png') center center;">
-				    <a href="#" target="_blank"><span>Download .RAR</span></a>
-                </div>
-
-                <div class="btn_download3 downloadLinks" style="background: url('./Assets/downloadButton7.png') center center;">
-                    <a href="#" target="_blank"><span>Download .EXE</span></a>
-			    </div>
-            </div>
-            <br />--%>
-
 			
 		</div>
 

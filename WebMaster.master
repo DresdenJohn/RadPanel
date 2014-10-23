@@ -81,7 +81,7 @@
             </div></a>
         <nav>
 	        <ul>
-                <li><a href="http://www.swiftgaming.net/forum/index.php" target="_blank">Forums</a></li>
+                <li><a href="http://www.radicalflyff.com/forum/index.php" target="_blank">Forums</a></li>
                 <li><a href="#NoFacebookYet_Sorry!"><i class="fa-facebook-square"></i></a></li>
                 <li><a href="#NoTwitterYet_Sorry!"><i class="fa-twitter"></i></a></li>
 		        <li><a href="register.aspx">Play Now!</a></li>
@@ -135,7 +135,7 @@
                             <h2>Account Management</h2>
                             <hr />
                             <ul>
-                                <li><a href="myAccount.aspx">My Swift Account</a></li>
+                                <li><a href="myAccount.aspx">My Radical Account</a></li>
                                 <asp:PlaceHolder id="adminLinksPlaceHolder" runat="server" Visible="false">
                                     <li><a href="./Admin/default.aspx">Enter Admin Control Panel</a></li>
                                 </asp:PlaceHolder>
@@ -174,30 +174,20 @@
 
                     <div class="box">
 
-                        <h2>Flyff Server Rates</h2>
+                        <h2>Flyff Rates <span style="font-size:10px; color: rgba(255,255,255,0.5); padding: 2px 0;">(To Be Changed)</span></h2>
                         <hr />
-                        <p>Experience Multiplier: ( <span style="color: #E59E7E">400x</span> )</p>
-                        <p>Drop Multiplier: ( <span style="color: #E59E7E">250x</span> )</p>
-                        <p>Penya Multiplier: ( <span style="color: #E59E7E">1500x</span> )</p>
+                        <p>Experience Multiplier: ( <span style="color: #E59E7E">10x</span> )</p>
+                        <p>Drop Multiplier: ( <span style="color: #E59E7E">5x</span> )</p>
+                        <p>Penya Multiplier: ( <span style="color: #E59E7E">20x</span> )</p>
 
                     </div>
 
                     <div class="box">
-                        <h2 style="">Server Status</h2>
-                        <hr />
-                        <p>Global Databases: ( <asp:Label ID="serverStatus" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
-                        <p>Swift Gaming Forums: ( <asp:Label ID="Label2" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
-                        <p>Swift Flight Online: ( <asp:Label ID="Label1" runat="server" Text="Online" ForeColor="#00D936"></asp:Label> )</p>
-                         <p>Swift Accounts Registered: 
-                            ( <asp:Label ID="swiftAccountLabel" runat="server" Text="0" ForeColor="#E59E7E"></asp:Label> )</p>
-                    </div>
-
-                    <div class="box">
-                        <h2>Flyff Server Stats</h2>
+                        <h2>Flyff Server: <span style="font-size:10px; color: rgba(255,255,255,0.5); padding: 2px 0;">(In Testing)</span></h2>
                         <hr />
                         <p>Registered Accounts: 
                             ( <asp:Label ID="irisAccountCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
-                        <p>In-game Char Count: 
+                        <p>Character Count: 
                             ( <asp:Label ID="irisCharCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
                         <p>Registered Guilds: 
                             ( <asp:Label ID="irisGuildCount" runat="server" ForeColor="#E59E7E" Text="TBD"></asp:Label> )</p>
