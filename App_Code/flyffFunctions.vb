@@ -366,10 +366,10 @@ Public Class flyffFunctions
 
                 finalString += "<table id='rankFrontTable'>" +
                     "<tr class='headerRow'>" +
-                    "<td width='50px'>Pos.</td>" +
-                    "<td width='150px'>Class</td>" +
-                    "<td width='200px' style='text-align:left !important;'>Character Name</td>" +
-                    "<td width='60'>Level</td></tr>"
+                    "<td width='150px'>Pos.</td>" +
+                    "<td width='250px'>Class</td>" +
+                    "<td width='250px' style='text-align:left !important;'>Character Name</td>" +
+                    "<td width='100'>Level</td></tr>"
 
                 For i As Integer = 1 To amount Step 1
 
